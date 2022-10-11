@@ -6,12 +6,16 @@
 
   width: 100vw;
   height: 100vh;
+}
 
-  .banner {
-    margin-left: 0.5rem;
-    width: 47.5rem;
-    height: 29.688rem;
-  }
+.banner {
+  margin-left: 0.5rem;
+  width: 47.5rem;
+  height: 29.688rem;
+  background-image: url("/docly.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
@@ -41,5 +45,46 @@
         color: var(--color-primary);
       }
     }
+  }
+}
+
+.logo {
+  width: 9.375rem;
+  height: 7.563rem;
+  background-image: url("/docly-logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    display: none;
+  }
+
+  .content {
+    width: 35.75rem;
+    height: 19.75rem;
+    background-color: var(--color-secondary);
+
+    form {
+      a {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .logo {
+    background-image: url("/docly-logo-small.png");
+    background-size: contain;
+    width: 9.375rem;
+    height: 3.125rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .banner {
+    width: 42rem;
+    height: 26.125rem;
   }
 }

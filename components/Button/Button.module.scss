@@ -22,3 +22,12 @@
     border-color: var(--color-primary);
   }
 }
+
+@media (max-width: 900px) {
+  .btn {
+    width: 29.375rem;
+    height: 1.938rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+}

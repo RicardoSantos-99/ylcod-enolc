@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,22 +14,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Docly</title>
       </Head>
-      <Image
-        className={styles.banner}
-        src="/docly.png"
-        alt="Banner"
-        width={760}
-        height={465}
-      />
-      {/* <img className={styles.banner} src="docly.png" alt="banner" /> */}
+      <div className={styles.banner}></div>
       <aside className={styles.content}>
-        <Image
-          className={styles.logo}
-          src="/docly-logo.png"
-          alt="logo docly"
-          width={150}
-          height={121}
-        />
+        <div className={styles.logo}></div>
         <form action="">
           <Input placeholder="Email" />
           <Input placeholder="Senha" />

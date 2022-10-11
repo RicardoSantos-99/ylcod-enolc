@@ -22,3 +22,11 @@
     box-shadow: none;
   }
 }
+
+@media (max-width: 900px) {
+  .input {
+    width: 29.375rem;
+    height: 1.938rem;
+    font-weight: bold;
+  }
+}
