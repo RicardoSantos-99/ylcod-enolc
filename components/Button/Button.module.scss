@@ -1,0 +1,24 @@
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--text-white);
+
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.75rem;
+
+  text-align: center;
+  width: 19.375rem;
+  height: 1.813rem;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-color: var(--color-primary);
+  }
+}

@@ -1,0 +1,24 @@
+.input {
+  width: 19.375rem;
+  height: 1.813rem;
+
+  cursor: text;
+
+  border: 0;
+  border-radius: 0;
+
+  background-color: transparent;
+  background-position: center bottom, center calc(99%);
+  background-repeat: no-repeat;
+  background-size: 0 0.125rem, 100% 0.063rem;
+  background-image: linear-gradient(var(--color-primary), var(--color-primary)),
+    linear-gradient(var(--line-gray), var(--line-gray));
+
+  &:focus {
+    outline: none;
+    color: var(--color-primary);
+    background-size: 100% 0.125rem, 100% 0.063rem;
+    transition-duration: 0.3s;
+    box-shadow: none;
+  }
+}
